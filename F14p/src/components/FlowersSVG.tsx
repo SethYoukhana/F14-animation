@@ -7,6 +7,7 @@ import "tailwindcss";
 
 const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
   const [clicked, setClicked] = useState(false);
+  const clickSound = new Audio("/wet-fart-6139.mp3");
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
@@ -2361,11 +2362,15 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
       </svg>
 
       <button
-        className="w-[240px] h-[300px] bg-gray-800 border-b-4 border-orange-700 rounded-xl 
-             shadow-lg shadow-pink-300 transition-all duration-200 
+        className="w-[240px] h-[300px] bg-gray-800 border-b-4 border-orange-400 rounded-xl 
+             shadow-lg shadow-orange-400 transition-all duration-200 
              active:translate-y-1 active:shadow-none active:border-b-2 
              flex justify-center items-center"
-        onClick={() => setClicked(!clicked)}
+        onClick={() => {
+          setClicked(!clicked);
+          clickSound.currentTime = 0; // Restart sound if clicked multiple times
+          clickSound.play();
+        }}
       >
         <img
           src="src/assets/IMG_7394.jpg"
