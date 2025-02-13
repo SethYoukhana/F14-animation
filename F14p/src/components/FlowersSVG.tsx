@@ -2362,7 +2362,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
       </svg>
 
       <button
-        className="w-[240px] h-[300px] bg-gray-800 border-b-4 border-orange-400 rounded-xl 
+        className="w-[210px] h-[260px] bg-gray-800 border-b-4 border-orange-400 rounded-xl 
              shadow-lg shadow-orange-400 transition-all duration-200 
              active:translate-y-1 active:shadow-none active:border-b-2 
              flex justify-center items-center"
