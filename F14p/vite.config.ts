@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "F14-animation"
+  base: "/F14-animation/"
 })

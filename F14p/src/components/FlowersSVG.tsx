@@ -15,7 +15,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
         className="cursor-pointer"
         // width={1235}
         // height={1237}
-        viewBox="0 0 1235 1237"
+        viewBox="0 0 2000 2000"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
@@ -2201,11 +2201,11 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
           <motion.g
             id="Happy Valentines day Shitter!"
             filter="url(#filter0_d_5_12134)"
-            initial={{ x: "-100vw", scale: 1 }} // Start off-screen to the left
+            initial={{ x: "-140vw", scale: 1 }} // Start off-screen to the left
             animate={
               clicked
                 ? {
-                    x: ["-100vw", 0], // Slide into view
+                    x: ["-140vw", 0], // Slide into view
                     transition: {
                       type: "spring",
                       stiffness: 120,
@@ -2215,7 +2215,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
                     transitionEnd: {},
                   }
                 : {
-                    x: "100vw", // Move off-screen to the right
+                    x: "140vw", // Move off-screen to the right
                     transition: {
                       duration: 4, // Smooth exit timing
                       ease: "easeInOut",
@@ -2371,8 +2371,9 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
           clickSound.play();
         }}
       >
-        <img src={`${import.meta.env.BASE_URL}IMG_7394.jpg`} 
-        alt="cat-boom"
+        <img
+          src={`${import.meta.env.BASE_URL}cat.jpg`}
+          alt="cat-boom"
           className="w-[200px] h-auto object-contain"
         />
       </button>
