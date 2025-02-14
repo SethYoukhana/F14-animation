@@ -6,7 +6,7 @@ import "tailwindcss";
 
 const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
   const [clicked, setClicked] = useState(false);
-  const clickSound = new Audio("/wet-fart-6139.mp3");
+  const clickSound = new Audio(`${import.meta.env.BASE_URL}wet-fart-6139.mp3`);
 
   return (
     <div className="overflow-hidden w-screen h-screen flex flex-col justify-center items-center">
@@ -2371,9 +2371,8 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
           clickSound.play();
         }}
       >
-        <img
-          src="src/assets/IMG_7394.jpg"
-          alt="Flower"
+        <img src={`${import.meta.env.BASE_URL}IMG_7394.jpg`} 
+        alt="cat-boom"
           className="w-[200px] h-auto object-contain"
         />
       </button>
