@@ -10,7 +10,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
   const clickSound = new Audio("/wet-fart-6139.mp3");
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center">
+    <div className="overflow-hidden w-screen h-screen flex flex-col justify-center items-center">
       <svg
         {...props}
         className="cursor-pointer"
@@ -2210,7 +2210,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
                     transition: {
                       type: "spring",
                       stiffness: 120,
-                      damping: 25, // Bounce effect
+                      damping: 28, // Bounce effect
                     },
                     scale: [1, 4, 1], // Grow
                     transitionEnd: {},
@@ -2218,7 +2218,7 @@ const FlowersSVG = (props: SVGProps<SVGSVGElement>) => {
                 : {
                     x: "100vw", // Move off-screen to the right
                     transition: {
-                      duration: 3.5, // Smooth exit timing
+                      duration: 4, // Smooth exit timing
                       ease: "easeInOut",
                     },
                   }
